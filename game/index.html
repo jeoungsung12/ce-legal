@@ -14,11 +14,10 @@
 * { box-sizing:border-box; }
 body { margin:0; word-break:keep-all; background:var(--bg); color:var(--ink);
        font:16px/1.8 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
-.hero { position:relative; min-height:62vh; display:flex; align-items:flex-end;
-        background:linear-gradient(to top, var(--bg) 4%, rgba(20,24,27,0) 55%), url("img/hero.jpg") center/cover; }
-.hero-in { max-width:980px; margin:0 auto; width:100%; padding:0 16px 36px; }
+.hero img.art { display:block; width:100%; max-height:70vh; object-fit:cover; }
+.hero-in { max-width:980px; margin:0 auto; width:100%; padding:20px 16px 8px; }
 .badge { width:72px; height:72px; border-radius:18px; box-shadow:0 6px 18px rgba(0,0,0,.4); display:block; margin-bottom:14px; }
-h1 { font-weight:800; font-size:clamp(40px, 8vw, 72px); line-height:1.1; margin:0; letter-spacing:.02em; text-shadow:0 2px 14px rgba(0,0,0,.6); }
+h1 { font-weight:800; font-size:clamp(32px, 6vw, 52px); line-height:1.1; margin:0; }
 .tag { font-size:clamp(17px, 2.4vw, 22px); margin:10px 0 0; text-shadow:0 1px 8px rgba(0,0,0,.7); }
 .stores { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
 .btn { display:inline-block; padding:10px 18px; border-radius:999px; font-size:15px; text-decoration:none; }
@@ -42,7 +41,7 @@ footer a { color:var(--sub); margin-right:14px; }
 </style>
 </head>
 <body>
-<header class="hero"><div class="hero-in">
+<header class="hero"><img class="art" src="img/hero.jpg" alt="카운트 일레븐"><div class="hero-in">
   <img class="badge" src="img/icon.png" alt="">
   <h1>카운트 일레븐</h1>
   <p class="tag">열을 넘겨도, 일어선다.</p>
